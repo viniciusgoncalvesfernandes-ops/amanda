@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color: #d10d27;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid #0f0e0e;
+        }
+        main {
+            background-color: #fbff00;
+            color: #183C63;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            display: flex;
+            flex-direction: column; /* Mantém os artigos um embaixo do outro */
+            gap: 30px;
+        }
+        /* ESTA REGRA FOI ADICIONADA */
+        article {
+            display: flex;          /* Coloca a imagem e o texto lado a lado */
+            gap: 20px;              /* Espaço entre a imagem e o texto */
+            align-items: flex-start;/* Alinha o topo da imagem com o topo do texto */
+        }
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;      /* Evita que a imagem fique distorcida */
+        }
+        .artigo-autor {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A melhor temporada de todas do fortnite</h1>
+        <p>Vou compartilhar conhecimentos sobre uma temporada </p>
+    </header>
+    <main>
+        <article>
+            <img src="Gemini_Generated_Image_64ffiz64ffiz64ff (1).png" alt="Logotipo conceitual de tecnologia e educacao.">
+            <div>
+                <h2> Temporada do midas</h2>
+                <p class="artigo-autor">Por: Vinicius gabriel</p>
+                <p> A Temporada do Midas (Capítulo 2, Temporada 2 de Fortnite), lançada em fevereiro de 2020, transformou o jogo em uma eletrizante guerra de espiões. Com uma estética de alto estilo e o icônico "toque dourado", o misterioso chefe criminoso comandava a ilha a partir do centro de operações na Agência, marcando uma era inesquecível de cofres secretos, armas míticas e a escolha definitiva entre as facções Espectro e Sombra. A temporada introduziu uma nova dinâmica ao mapa, substituindo pontos comuns por bases de operações fortificadas cheias de capangas controlados pela inteligência artificial. </p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+        <article>
+            <img src="Gemini_Generated_Image_64ffiz64ffiz64ff (1).png" alt="Logotipo conceitual de tecnologia e educacao.">
+            <div>
+                <h2> Tudo o que entrou no jogo</h2>
+                <p class="artigo-autor">Por: Vinicius gabriel</p>
+                <p> "Ultra Secreta", mudou a história do jogo ao introduzir um tema de espionagem focado na guerra entre as facções Espectro e Sombra. O Passe de Batalha trouxe agentes icônicos como Brutus, TNTina, Miauúsculo, Skye, a skin secreta do Deadpool e o lendário Midas no nível 100, dono da habilidade passiva de transformar qualquer arma ou veículo em ouro puro. O mapa recebeu cinco bases fortificadas repletas de capangas controlados por Inteligência Artificial: A Agência, A Gruta, O Tubarão, A Plataforma e O Iate. Para vencer, os jogadores invadiam esses locais usando mecânicas inéditas como disfarces em cabines telefônicas, dutos de ventilação e interrogatórios. Ao derrotar os chefes dessas bases, era possível pegar cartões de acesso para abrir cofres monumentais e roubar armas míticas exclusivas e extremamente poderosas, como a Metralhadora de Tambor do Midas ou a Minigun do Brutus. A temporada terminou com o histórico evento ao vivo "O Dispositivo", no qual Midas tentou desafiar o sistema destruindo a tempestade com uma máquina gigante, o que acabou gerando um colapso que substituiu a tempestade por uma colossal e ameaçadora parede de água em torno de toda a ilha.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            botao.addEventListener("click", function botaoClicado() {
+                let texto = botao.querySelector("span");
+                texto.textContent = parseInt(texto.textContent) + 1;
+            });
+        });
+    </script>
+</body>
+</html>
